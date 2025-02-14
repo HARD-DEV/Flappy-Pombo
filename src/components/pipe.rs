@@ -1,8 +1,4 @@
-use macroquad::prelude::{draw_rectangle, GREEN};
-use macroquad::prelude::{screen_height, screen_width};
-use crate::PIPE_WIDTH;
-
-let mut pipes: Vec<Pipe> = vec![Pipe { ... }];
+use macroquad::prelude::{draw_rectangle, screen_height, screen_width, GREEN, WHITE};
 
 pub struct Pipe {
     pub x: f32,
@@ -25,3 +21,5 @@ impl Pipe {
         );
     }
 }
+
+const PIPE_WIDTH: f32 = 50.0;
